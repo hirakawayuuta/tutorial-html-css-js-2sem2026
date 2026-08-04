@@ -1,0 +1,30 @@
+#dashboard{
+    display: flex;
+    height: 885px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#header{
+    background-color: #f2d3ab;
+    height: 100px;
+}
+
+#sidebar{
+    background-color: #494d7e;
+    width: 300px;
+}
+
+#content{
+    background-color: #272744;
+    height: 635px;
+}
+
+#footer{
+    background-color: #8b6d9c;
+    height: 150px;
+}

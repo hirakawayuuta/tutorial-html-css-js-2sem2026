@@ -8,20 +8,16 @@
     display: flex;
 }
 
-#sidebar {
+#sidebar, #sidebar2 {
     width: 300px;
     height: 400px;
     background-color: #494d7e;
 }
 
-#sidebar2 {
-    width: 300px;
-    height: 400px;
-    background-color: #c69fa5;
-}
+
 
 #content {
-    width: calc(100% - 300px);
+    width: calc(100% - 600px);
     height: 400px;
     background-color: #272744;
 }

@@ -27,12 +27,78 @@
         <main>
             <div class="wrapper">
                 <h1>Cadastro</h1>
+                <form>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="userName"> Nome: </label>
+                        <input type="text" name="userName" id="userName" placeholder="Nome">
+
+                        <label for="userSurame"> Sobrenome: </label>
+                        <input type="text" name="userSurname" id="userSurname" placeholder="Sobrenome">
+
+                        <label for="userPassword"> Senha:</label>
+                        <input type="password" name="userPassword" id="userPassword" placeholder="Senha">
+                        <fieldset id="address">
+                            <legend>Endereço</legend>
+                            <label for="userState">Estado:</label>
+                            <select name="userState" id="userState">
+                                <option value="sp">São Paulo</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="ba">Bahia</option>
+                                <option value="pr">Paraná</option>
+                                <option value="other">Outro</option>
+                            </select>
+
+                            <label for="userCity">Cidade:</label>
+                            <input type="text" name="userCity" id="userCity" placeholder="Cidade">
+
+                            <label for="userStreet">Rua:</label>
+                            <input type="text" name="userStreet" id="userStreet" placeholder="Rua">
+                        </fieldset>
+                    </fieldset>
+
+                    <h3>Qual seu perfil investidor?</h3>
+                    <div>
+                        <input type="radio" name="perfilInvestidor" id="conservador" value="conservador">
+                        <label for="conservador">Conservador</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="perfilInvestidor" id="moderado" value="moderado">
+                        <label for="moderado">Moderado</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="perfilInvestidor" id="arrojado" value="arrojado">
+                        <label for="arrojado">Arrojado</label>
+                    </div>
+
+                    <h3>Em quais tipos de investimentos você tem interesse?</h3>
+                        <div>
+                            <input type="checkbox" name="investimentos[]" id="rendaFixa" value="rf">
+                            <label for="rendaFixa">Renda Fixa</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="investimentos[]" id="rendaVariavel" value="rv">
+                            <label for="rendaVariavel">Renda Variável</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="investimentos[]" id="fundosImobiliarios" value="fi">
+                            <label for="fundosImobiliarios">Fundos Imobiliários</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="investimentos[]" id="criptoativos" value="ca">
+                            <label for="criptoativos">Criptoativos</label>
+                        </div>
+
+                    <h3></h3>
+                    <input type="submit">
+                </form>
             </div>
         </main>
 
         <footer>
             <div class="wrapper">
-                <p>&copy; 2023 IF Investments. Todos os direitos reservados.</p>
+                <p>&copy; 2026 IF Investments. Todos os direitos reservados.</p>
             </div>
         </footer>
     </body>
